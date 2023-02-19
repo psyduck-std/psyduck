@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/gastrodon/psyduck-std/psyduck/consume"
-	"github.com/gastrodon/psyduck-std/psyduck/produce"
-	"github.com/gastrodon/psyduck-std/psyduck/transform"
 	"github.com/gastrodon/psyduck/sdk"
+	"github.com/psyduck-std/psyduck/consume"
+	"github.com/psyduck-std/psyduck/produce"
+	"github.com/psyduck-std/psyduck/transform"
 	"github.com/zclconf/go-cty/cty"
 )
 

@@ -1,6 +1,6 @@
-module github.com/gastrodon/psyduck-std/psyduck
+module github.com/psyduck-std/psyduck
 
-go 1.19
+go 1.18
 
 require (
 	github.com/gastrodon/psyduck v1.2.1

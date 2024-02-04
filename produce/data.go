@@ -16,7 +16,7 @@ func Constant(parse sdk.Parser, specParse sdk.SpecParser) (sdk.Producer, error) 
 	count := 0
 	next := func() ([]byte, bool, error) {
 		count++
-		return []byte(config.Value), config.StopAfter != 0 && count < config.StopAfter, nil
+		return []byte(config.Value), config.StopAfter == 0 || count < config.StopAfter, nil
 	}
 
 	return func() (chan []byte, chan error) {

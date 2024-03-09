@@ -3,7 +3,7 @@ package transform
 import (
 	"testing"
 
-	"github.com/gastrodon/psyduck/sdk"
+	"github.com/psyduck-std/sdk"
 )
 
 var cases = []struct {

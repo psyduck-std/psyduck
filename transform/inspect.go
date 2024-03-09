@@ -3,7 +3,7 @@ package transform
 import (
 	"fmt"
 
-	"github.com/gastrodon/psyduck/sdk"
+	"github.com/psyduck-std/sdk"
 )
 
 type InspectConfig struct {

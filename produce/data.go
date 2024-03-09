@@ -1,7 +1,7 @@
 package produce
 
 import (
-	"github.com/gastrodon/psyduck/sdk"
+	"github.com/psyduck-std/sdk"
 )
 
 type constant struct {

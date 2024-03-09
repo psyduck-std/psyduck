@@ -1,9 +1,9 @@
 module github.com/psyduck-std/psyduck
 
-go 1.18
+go 1.22.1
 
 require (
-	github.com/gastrodon/psyduck v1.2.3-0
+	github.com/psyduck-std/sdk v1.0.0
 	github.com/zclconf/go-cty v1.14.3
 )
 

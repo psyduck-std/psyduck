@@ -1,7 +1,7 @@
 package consume
 
 import (
-	"github.com/gastrodon/psyduck/sdk"
+	"github.com/psyduck-std/sdk"
 )
 
 func Trash(_ sdk.Parser, _ sdk.SpecParser) (sdk.Consumer, error) {

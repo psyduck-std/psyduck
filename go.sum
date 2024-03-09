@@ -1,8 +1,9 @@
 github.com/apparentlymart/go-textseg/v15 v15.0.0 h1:uYvfpb3DyLSCGWnctWKGj857c6ew1u1fNQOlOtuGxQY=
 github.com/apparentlymart/go-textseg/v15 v15.0.0/go.mod h1:K8XmNZdhEBkdlyDdvbmmsvpAG721bKi0joRfFdHIWJ4=
-github.com/gastrodon/psyduck v1.2.3-0 h1:x527DEO7zAtAmqCTIM0YLNdyjCp9iVXm7jECgViSUSo=
-github.com/gastrodon/psyduck v1.2.3-0/go.mod h1:bNmUirK6IBA81AG89Kk8/zVd/UHZN+Vj95EGhHcyC7A=
-github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
+github.com/google/go-cmp v0.3.1 h1:Xye71clBPdm5HgqGwUkwhbynsUJZhDbS20FvLhQ2izg=
+github.com/google/go-cmp v0.3.1/go.mod h1:8QqcDgzrUqlUb/G2PQTWiueGozuR1884gddMywk6iLU=
+github.com/psyduck-std/sdk v1.0.0 h1:n9eGpWC90RFHgPUTiKT1QQl+sIE8kOqr0DxfXIfHwQg=
+github.com/psyduck-std/sdk v1.0.0/go.mod h1:d8iccwDFuTVsBkO2DnnpV3eYjG5h/LM/TeJWcdESaME=
 github.com/zclconf/go-cty v1.14.3 h1:1JXy1XroaGrzZuG6X9dt7HL6s9AwbY+l4UNL8o5B6ho=
 github.com/zclconf/go-cty v1.14.3/go.mod h1:VvMs5i0vgZdhYawQNq5kePSpLAoz8u1xvZgrPIxfnZE=
 golang.org/x/text v0.14.0 h1:ScX5w1eTa3QqT8oi6+ziP7dTV1S2+ALU0bI+0zXKWiQ=

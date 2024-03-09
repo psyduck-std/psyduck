@@ -20,8 +20,11 @@ func Constant(parse sdk.Parser, specParse sdk.SpecParser) (sdk.Producer, error) 
 	}
 
 	return func() (chan []byte, chan error) {
-		data := make(chan []byte, 32)
-		go func() { sdk.ProduceChunk(next, specParse, data, nil) }()
+		data := make(chan []byte)
+		go func() {
+			sdk.ProduceChunk(next, specParse, data, nil)
+			close(data)
+		}()
 		return data, nil
 	}, nil
 }

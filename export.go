@@ -75,6 +75,19 @@ func Plugin() *sdk.Plugin {
 					},
 				},
 			},
+			{
+				Name:               "psyduck-wait",
+				Kinds:              sdk.TRANSFORMER,
+				ProvideTransformer: transform.Wait,
+				Spec: sdk.SpecMap{
+					"milliseconds": &sdk.Spec{
+						Name:        "milliseconds",
+						Description: "duratin to wait in ms",
+						Type:        cty.Number,
+						Required:    true,
+					},
+				},
+			},
 		},
 	}
 }

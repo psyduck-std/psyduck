@@ -4,18 +4,10 @@ import (
 	"github.com/psyduck-std/sdk"
 )
 
-func Trash(_ sdk.Parser, _ sdk.SpecParser) (sdk.Consumer, error) {
-	return func() (chan []byte, chan error, chan bool) {
-		data := make(chan []byte)
-		done := make(chan bool)
-
-		go func() {
-			for range data {
-			}
-
-			done <- true
-		}()
-
-		return data, nil, done
+func Trash(sdk.Parser, sdk.SpecParser) (sdk.Consumer, error) {
+	return func(recv <-chan []byte, errs chan<- error, done chan<- struct{}) {
+		for range recv {
+		}
+		close(done)
 	}, nil
 }

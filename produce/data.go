@@ -16,15 +16,12 @@ func Constant(parse sdk.Parser, specParse sdk.SpecParser) (sdk.Producer, error) 
 	count := 0
 	next := func() ([]byte, bool, error) {
 		count++
-		return []byte(config.Value), config.StopAfter == 0 || count < config.StopAfter, nil
+		return []byte(config.Value), config.StopAfter != 0 && count > config.StopAfter, nil
 	}
 
-	return func() (chan []byte, chan error) {
-		data := make(chan []byte)
-		go func() {
-			sdk.ProduceChunk(next, specParse, data, nil)
-			close(data)
-		}()
-		return data, nil
+	return func(send chan<- []byte, errs chan<- error) {
+		sdk.ProduceChunk(next, specParse, send)
+		close(send)
+		close(errs)
 	}, nil
 }

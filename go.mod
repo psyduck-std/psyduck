@@ -4,7 +4,7 @@ go 1.22.1
 
 require (
 	github.com/psyduck-std/sdk v0.2.0
-	github.com/zclconf/go-cty v1.14.3
+	github.com/zclconf/go-cty v1.14.4
 )
 
 require (

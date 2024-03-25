@@ -1,6 +1,8 @@
 package produce
 
 import (
+	"fmt"
+
 	"github.com/psyduck-std/sdk"
 )
 
@@ -21,6 +23,7 @@ func Constant(parse sdk.Parser, specParse sdk.SpecParser) (sdk.Producer, error) 
 
 	return func(send chan<- []byte, errs chan<- error) {
 		sdk.ProduceChunk(next, specParse, send)
+		fmt.Println("constant: close done")
 		close(send)
 		close(errs)
 	}, nil

@@ -3,7 +3,7 @@ package transform
 import (
 	"testing"
 
-	"github.com/psyduck-std/sdk"
+	"github.com/psyduck-etl/sdk"
 )
 
 var cases = []struct {

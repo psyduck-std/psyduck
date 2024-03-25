@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/psyduck-std/sdk"
+	"github.com/psyduck-etl/sdk"
 )
 
 type ZoomConfig struct {

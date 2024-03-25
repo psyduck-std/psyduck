@@ -3,7 +3,7 @@ package consume
 import (
 	"fmt"
 
-	"github.com/psyduck-std/sdk"
+	"github.com/psyduck-etl/sdk"
 )
 
 func Trash(sdk.Parser, sdk.SpecParser) (sdk.Consumer, error) {

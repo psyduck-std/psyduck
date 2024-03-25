@@ -3,7 +3,7 @@ package transform
 import (
 	"fmt"
 
-	"github.com/psyduck-std/sdk"
+	"github.com/psyduck-etl/sdk"
 )
 
 type InspectConfig struct {

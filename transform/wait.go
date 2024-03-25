@@ -3,7 +3,7 @@ package transform
 import (
 	"time"
 
-	"github.com/psyduck-std/sdk"
+	"github.com/psyduck-etl/sdk"
 )
 
 func Wait(parse sdk.Parser, _ sdk.SpecParser) (sdk.Transformer, error) {

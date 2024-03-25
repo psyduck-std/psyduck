@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/psyduck-std/psyduck/consume"
-	"github.com/psyduck-std/psyduck/produce"
-	"github.com/psyduck-std/psyduck/transform"
-	"github.com/psyduck-std/sdk"
+	"github.com/psyduck-etl/psyduck/consume"
+	"github.com/psyduck-etl/psyduck/produce"
+	"github.com/psyduck-etl/psyduck/transform"
+	"github.com/psyduck-etl/sdk"
 	"github.com/zclconf/go-cty/cty"
 )
 

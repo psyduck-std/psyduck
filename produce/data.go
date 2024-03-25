@@ -3,7 +3,7 @@ package produce
 import (
 	"fmt"
 
-	"github.com/psyduck-std/sdk"
+	"github.com/psyduck-etl/sdk"
 )
 
 type constant struct {
